@@ -21,7 +21,7 @@
  </h2>	
 
  <div class="top-left">
-<p>A propos de vous</p>
+	<p>A propos de vous</p>
  </div>
 
 
@@ -317,16 +317,16 @@
  <fieldset class="message">
   	
   	<div>
-  		<label for="Sujet"> Sujet : </label>
-  		<p>
-  			<input type="radio" name="sujet" id="Sujet" value="Sujet 1" checked> Sujet 1<br>
-  			<input type="radio" name="sujet" id="Sujet" value="Sujet 2" > Sujet 2<br>
-  			<input type="radio" name="sujet" id="Sujet" value="Sujet 3" > Sujet 3<br>
-  			<input type="radio" name="sujet" id="Sujet" value="Sujet 4" > Autre : <input type="text" id="sujet-autre"><br>
-  		</p>		
+  		
+  		
+  			<input type="radio" name="sujet" id="Sujet" value="Sujet 1" checked> <label for="Sujet">Sujet 1</label><br>
+  			<input type="radio" name="sujet" id="Sujet2" value="Sujet 2" > <label for="Sujet2">Sujet 2</label><br>
+  			<input type="radio" name="sujet" id="Sujet3" value="Sujet 3" > <label for="Sujet3">Sujet 3</label><br>
+  			<input type="radio" name="sujet" id="autre" value="Sujet 4" > <label for="autre">Autre : </label><input type="text" id="sujet-autre"><br>
+  				
 
 		<label for="text-message">   </label>
-		<textarea id="text-message" rows="10"; cols="100"; placeholder="Décrivez votre soucis ici !" ></textarea>
+		<textarea id="text-message" rows="10"; cols=""; placeholder="Décrivez votre soucis ici !" ></textarea>
 		<button type="submit">Envoyer =)</button>
   	</div>
 

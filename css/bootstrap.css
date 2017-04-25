@@ -9320,5 +9320,43 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 /*# sourceMappingURL=bootstrap.css.map */
 
 body {
-  background-color: #66ff66;
+  background-color: #FFFFFF;
+  width:80%;
+  margin:auto;
+}
+fieldset{
+  display:inline;
+  border:0px solid black;
+}
+.top-left {
+  display:inline;
+  float:left;
+  border:0px solid black;
+  width:7%;
+}
+
+.info {
+  width:93%;
+  border: 2px solid black;
+}
+
+.message {
+  width: 50%;
+  display:inline;
+  border: 2px solid black;
+  
+}
+
+.bottom-left {
+  border:0px solid black;
+  display:inline;
+  float:left;
+  width:7%;
+}
+
+button {
+  float:right;
+  height: 250px;
+  background:url(img/hackers-poulette-log.png) no-repeat;
+
 }
