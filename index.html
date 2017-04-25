@@ -3,12 +3,13 @@
 <head>
 	<title>Formulaire</title>
 	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/bootstrap.css" style="text/css">
 </head>
 <body>
 
 
 
-<form>
+<form method="POST" action="www.google.fr">
 
 
  <h1>
@@ -27,24 +28,24 @@
  <fieldset class="info">
  	<div>
  		<label for="nom"> Nom :</label>
- 		<input type="text" name="nom">
+ 		<input type="text" id="nom">
  	</div>
 
  	<div>
- 		<label for="prénom"> Prénom </label>
- 		<input type="text" name="prenom">
+ 		<label for="prenom"> Prénom </label>
+ 		<input type="text" id="prenom">
  	</div>
 
  	<div>
  		<label for="mail"> E-Mail</label>
- 		<input type="email" name="mail">
+ 		<input type="email" id="mail">
  	</div>
 
  	<div>
  		<label for="genre"> Genre</label>
- 		<input type="radio" name="genre" value="Homme" checked> H
- 		<input type="radio" name="genre" value="Femme"> F
- 		<input type="radio" name="genre" value="Autre"> X
+ 		<input type="radio" id="genre" name="genre" value="Homme" checked> H
+ 		<input type="radio" id="genre" name="genre" value="Femme"> F
+ 		<input type="radio" id="genre" name="genre" value="Autre"> X
  	</div>
 
  	<div>
@@ -262,7 +263,7 @@
 			<option value="ES">Spain</option>
 			<option value="LK">Sri Lanka</option>
 			<option value="SD">Sudan</option>
-			<option value="SR">Suriname</option>
+			<option value="SR">Suriid</option>
 			<option value="SJ">Svalbard and Jan Mayen</option>
 			<option value="SZ">Swaziland</option>
 			<option value="SE">Sweden</option>
@@ -307,7 +308,7 @@
 
  </fieldset>
 
-
+<!-- Ma partie à faire avec CSS -->
  <div class="bottom-left">
  	<p> Décrivez nous votre probleme </p>
  </div>
@@ -318,15 +319,15 @@
   	<div>
   		<label for="Sujet"> Sujet : </label>
   		<p>
-  			<input type="radio" name="Titre" value="Sujet 1" checked> Sujet 1<br>
-  			<input type="radio" name="Titre" value="Sujet 2" checked> Sujet 2<br>
-  			<input type="radio" name="Titre" value="Sujet 3" checked> Sujet 3<br>
-  			<input type="radio" name="Titre" value="Sujet 4" checked> Autre : <input type="text" name="sujet-autre"><br>
+  			<input type="radio" name="sujet" id="Sujet" value="Sujet 1" checked> Sujet 1<br>
+  			<input type="radio" name="sujet" id="Sujet" value="Sujet 2" > Sujet 2<br>
+  			<input type="radio" name="sujet" id="Sujet" value="Sujet 3" > Sujet 3<br>
+  			<input type="radio" name="sujet" id="Sujet" value="Sujet 4" > Autre : <input type="text" id="sujet-autre"><br>
   		</p>		
 
-<label for="text-message"> </label>
-<textarea rows="10"; cols="100"; > Décrivez votre soucis ici ! </textarea>
-
+		<label for="text-message">   </label>
+		<textarea id="text-message" rows="10"; cols="100"; placeholder="Décrivez votre soucis ici !" ></textarea>
+		<button type="submit">Envoyer =)</button>
   	</div>
 
  </fieldset>
@@ -338,6 +339,6 @@
 
 
 
->>>>>>> tom-dev
+
 </body>
 </html>
