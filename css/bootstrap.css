@@ -9321,14 +9321,13 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 
 body {
   background-color: #FFFFFF;
-  width:80%;
-  margin:auto;
+  width:100%;
   background-color: grey;
   transform:scale(0.8);
 }
 
 form {
-;
+
   background-color: #FFFFFF;
 }
 
@@ -9346,13 +9345,14 @@ fieldset{
 
 .info {
   width:80%;
-  border: 2px solid black;
+  border: 0px solid black;
 }
 
 .message {
+  margin-top: 20px;
   width: 80%;
   display:inline;
-  border: 2px solid black;
+  border: 0px solid black;
   
 }
 
@@ -9360,12 +9360,18 @@ fieldset{
   border:0px solid black;
   display:inline;
   float:left;
+
   width:12%;
+  margin-top: 20px;
 }
 
 button {
   display:block;
   float:right;
   width:100px;
-  height: 250px;
+  
+}
+
+input {
+  float:flex;
 }
