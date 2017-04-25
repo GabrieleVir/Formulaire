@@ -9323,25 +9323,34 @@ body {
   background-color: #FFFFFF;
   width:80%;
   margin:auto;
+  background-color: grey;
+  transform:scale(0.8);
 }
+
+form {
+;
+  background-color: #FFFFFF;
+}
+
 fieldset{
   display:inline;
   border:0px solid black;
+
 }
 .top-left {
   display:inline;
   float:left;
   border:0px solid black;
-  width:7%;
+  width:12%;
 }
 
 .info {
-  width:93%;
+  width:80%;
   border: 2px solid black;
 }
 
 .message {
-  width: 50%;
+  width: 80%;
   display:inline;
   border: 2px solid black;
   
@@ -9351,12 +9360,12 @@ fieldset{
   border:0px solid black;
   display:inline;
   float:left;
-  width:7%;
+  width:12%;
 }
 
 button {
+  display:block;
   float:right;
+  width:100px;
   height: 250px;
-  background:url(img/hackers-poulette-log.png) no-repeat;
-
 }
