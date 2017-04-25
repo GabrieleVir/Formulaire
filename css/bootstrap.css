@@ -6953,7 +6953,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 
 body {
   background-color: #FFFFFF;
-  width:80%;
+  width:1000px;
   margin:auto;
 }
 fieldset{
@@ -6964,11 +6964,11 @@ fieldset{
   display:inline;
   float:left;
   border:0px solid black;
-  width:7%;
+  width:120px;
 }
 
 .info {
-  width:93%;
+  width:90%;
   border: 2px solid black;
 }
 
