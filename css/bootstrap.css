@@ -6952,27 +6952,26 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 /*# sourceMappingURL=bootstrap.css.map */
 
 body {
-  background-color: #FFFFFF;
   width:1000px;
   margin:auto;
-  background-color: grey;
+  background-color: black;
   
 }
 
 form {
 ;
-  background-color:#b0bec5 ;
+  background-color: #f5f5f5  ;
 }
 
 fieldset{
   display:inline;
-  border:0px solid black;
+
 
 }
 .top-left {
   display:inline;
   float:left;
-  border:0px solid black;
+  padding-left: 10px;
   width:120px;
 }
 
@@ -6983,26 +6982,38 @@ fieldset{
 
 .info {
   width:80%;
-  border: 2px solid black;
+ 
 }
 
 .message {
   width: 80%;
   display:inline;
-  border: 2px solid black;
+
   
 }
 
 .bottom-left {
-  border:0px solid black;
+  
   display:inline;
   float:left;
   width:12%;
+  padding-left: 10px;
 }
 
 button {
   display:block;
   float:right;
   width:100px;
+  height: 250px;
+  color: white;
+  background-color: black;
+}
+
+h1,h2 {
+  text-align: center;
+}
+
+#text-message {
+  width: 650px;
   height: 250px;
 }
