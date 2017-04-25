@@ -8,21 +8,20 @@
 <body>
 
 
+<form method="POST" action="formulaire-traitement.php">
 
-<form method="POST" action="www.google.fr">
 
+	 <h1>
+ 		Oops ! Désolé de savoir que vous rencontrez un probleme :( 
+ 	</h1>
 
- <h1>
- Oops ! Désolé de savoir que vous rencontrez un probleme :( 
- </h1>
+ 	<h2>
+ 		Voici comment nous contacter pour vous aidez !  
+ 	</h2>	
 
- <h2>
- Voici comment nous contacter pour vous aidez !  
- </h2>	
-
- <div class="top-left">
-	<p>A propos de vous</p>
- </div>
+	 <div class="top-left">
+		<p>A propos de vous</p>
+	 </div>
 
 
  <fieldset class="info">
@@ -327,14 +326,21 @@
 
 		<label for="text-message">   </label>
 		<textarea id="text-message" rows="10"; cols=""; placeholder="Décrivez votre soucis ici !" ></textarea>
-		<button type="submit"><img src="img/hackers-poulette-log.png"> Envoyer =)</button>
+		<button type="submit"> Envoyer =)</button>
   	</div>
 
  </fieldset>
 
 </form>
 
+<?php
 
+$mail = test_input($_POST["mail"]);
+if (!filter_var($mail, FILTER_VALIDATE_EMAIL)) {
+  $emailErr = "Invalid email format"; 
+}
+
+?>
 
 
 
