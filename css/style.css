@@ -14,16 +14,19 @@
 
 body {
   font-family: 'bellotaregular';
-  background-color: #FFFFFF;
-  width:100%;
-  margin:0 auto;
-  background-color: grey;
-  transform:scale(0.8);
+  width:90%;
+  margin:auto;
+  
+  background-color: #f2f2f2;
+
 }
 
 form {
   background-color: #FFFFFF;
   display: inline-block;
+  background-image: url("hackers-poulette-logo.png");
+  position: relative;
+  width: 100%;
 
 
 
@@ -63,10 +66,10 @@ fieldset{
   display: inline;
   border: 0px solid black;
   vertical-align: top;
+  margin-left: 50px;
  
 
 }
-
 
 
 .message {
@@ -74,18 +77,25 @@ fieldset{
   display:inline;
   border: 0px solid black;
   vertical-align: top;
+}
 
-  
+.nom {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 
+.email {
+  padding-top: 60px;
+  padding-bottom: 10px;
+}
 
 button {
   display:block;
   float:right;
-  width:100px;
-    vertical-align: top;
-
+  margin-right: 33%;
+  width: 100px;
+  height: 80px;
   
 }
 
@@ -101,10 +111,47 @@ footer {
    height: 60px;
 }
 
+
 .message {
   display: inline;
 }
 
 .message-box {
   display: inline;
+
   
+}
+input {
+  border:0px ;
+  border-bottom: 2px solid black;
+
+}
+.button {
+  background:white;
+  border-radius: 1px;
+  border:0px;
+  margin-top: 2%;
+  height: 30px;
+  
+}
+
+#hacker-p {
+  display:inline;
+  
+}
+
+#hacker-p img {
+  width: 300px;
+  height:250px;
+  left: 670px;
+  top: 165px;
+  position: absolute;
+}
+
+#text-message {
+  width: 500px;
+  border: solid dashed 1px;
+  font-size: 16px;
+  margin-top: 20px;
+
+}

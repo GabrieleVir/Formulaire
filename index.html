@@ -33,15 +33,15 @@
  <h3>A propos de vous</h3>
  	<div class="nom">
  		<label for="nom"> Nom :</label>
- 		<input type="text" id="nom" placeholder="Nom">
+ 		<input type="text" id="nom" placeholder="Votre nom">
  	</div>
 
  	<div class="nom">
  		<label for="prenom"> Prénom </label>
- 		<input type="text" id="prenom" placeholder="Prénom">
+ 		<input type="text" id="prenom" placeholder="Votre prénom">
 
  	</div>
-		<div class="genres">
+		<div class="nom">
  			<label for="genre"> Genre</label>
 	 		<input type="radio" id="genre" name="genre" value="Homme" checked> H
 	 		<input type="radio" id="genre" name="genre" value="Femme"> F
@@ -51,7 +51,8 @@
 	
  	<div class="email">
  		<label for="mail"> E-Mail</label>
- 		<input type="email" id="mail">
+ 		<input type="email" id="mail" placeholder="Votre E-Mail
+ 		">
  	</div>
 
  
@@ -328,27 +329,30 @@
   			<h3>Dites nous tout ! </h3>
 
   		
-  			<input type="radio" name="sujet" id="Sujet" value="Sujet 1" checked> <label for="Sujet">Sujet 1</label><br>
-  			<input type="radio" name="sujet" id="Sujet2" value="Sujet 2" > <label for="Sujet2">Sujet 2</label><br>
-  			<input type="radio" name="sujet" id="Sujet3" value="Sujet 3" > <label for="Sujet3">Sujet 3</label><br>
+  			<input type="radio" name="sujet" id="Sujet" value="Sujet 1" checked> <label for="Sujet">Problème Matériel</label><br>
+  			<input type="radio" name="sujet" id="Sujet2" value="Sujet 2" > <label for="Sujet2">Problème Logiciel</label><br>
+  			<input type="radio" name="sujet" id="Sujet3" value="Sujet 3" > <label for="Sujet3">Problème Livraison</label><br>
   			<input type="radio" name="sujet" id="autre" value="Sujet 4" > <label for="autre">Autre : </label><input type="text" id="sujet-autre"><br>
   				
 			
 	<div class="message-box">
 		<label for="text-message">   </label>
-		<textarea id="text-message" rows="10"; cols=""; placeholder="Décrivez votre soucis ici !" ></textarea>
+		<textarea id="text-message" rows="10"; cols="50"; placeholder="Décrivez votre soucis ici !" ></textarea>
 
 		
   	
-
+<figure id="hacker-p">
+	<img src="hackers-poulette-logo.png" alt="Image Hackers poulette">
+</figure>
 
 
  </fieldset>
-<button type="submit"> Envoyer =)</button>
+
+
 
 
 <footer>
-	
+	<button class="button" type="submit"> Envoyer =)</button>
 
 </footer>
 
