@@ -13,6 +13,7 @@
 
 
 body {
+
   font-family: 'bellotaregular';
   background-color: #FFFFFF;
   width:100%;
@@ -23,11 +24,13 @@ body {
 form {
   background-color: #FFFFFF;
   display: inline-block;
+  width:90%;
 
 }
 
 header {
   background-color: #15C5BD;
+  position: relative;
 }
 
 h1 {
@@ -43,44 +46,54 @@ h2 {
   color:#FFF;
   margin-top: 0px;
   margin-bottom: 0px;
-  font-family:;
+  
 }
 
 
 fieldset{
-  display:inline-block;
+  display:inline;
+  width: 45%
 
 
 }
 
 
 .info {
-  width:90%;
-  width:12%;
+  margin-top: 40px;
+
   display: inline;
   border: 0px solid black;
   vertical-align: top;
   margin-left: 50px;
- 
+  float: left;
 }
 
 
 .message {
-  margin-top: 0px;
+  margin-top: 40px;
   display:inline;
   border: 0px solid black;
   vertical-align: top;
+  
+  float: right;
 }
 
 .nom {
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
+.nom input {
+  width: 30%;
+}
+
+#genre {
+  width:0%;
+}
 
 .email {
   padding-top: 60px;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
 }
 
 button {
@@ -99,7 +112,7 @@ input {
 }
 
 footer {
-
+    clear:both;
    background-color: #15C5BD;
    width: 100%;
    height: 60px;
@@ -109,6 +122,7 @@ input {
   border:0px ;
   border-bottom: 2px solid black;
 
+
 }
 .button {
   background:white;
@@ -116,16 +130,25 @@ input {
   border:0px;
   margin-top: 2%;
   height: 30px;
-  
+  margin-right: 13%
 }
 
-#hacker-p {
-  display:inline;
-  
-}
 
-#hacker-p img {
-  padding-top: 65px;
+img {
+  position: absolute;
+  float:right;
   width: 300px;
-  height:250px;
+  height: 250px;
+  filter: invert(100%);
+  left:70%;
+}
+
+textarea{
+  margin-top: 30px;
+}
+
+.sujet {
+  margin-right: 10px;
+  margin-top: 10px;
+
 }
