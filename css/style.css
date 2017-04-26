@@ -22,6 +22,7 @@ body {
 
 form {
   background-color: #FFFFFF;
+  display: inline-block;
 
 }
 
@@ -47,52 +48,52 @@ h2 {
 
 
 fieldset{
-  display:inline;
+  display:inline-block;
 
 
 }
-.top-left {
-  display:inline;
-  float:left;
-  padding-left: 10px;
-  width:120px;
-}
+
 
 .info {
   width:90%;
   width:12%;
   display: inline;
+  border: 0px solid black;
+  vertical-align: top;
+ 
 }
 
-.info {
-  width:80%;
-  border: 0px solid black;
-}
 
 .message {
-  margin-top: 20px;
-  width: 80%;
+  margin-top: 0px;
+
   display:inline;
   border: 0px solid black;
+
+  vertical-align: top;
+
   
 }
 
-.bottom-left {
-  
-  display:inline;
-  float:left;
 
-  width:12%;
-  margin-top: 20px;
-}
 
 button {
   display:block;
   float:right;
   width:100px;
+    vertical-align: top;
+
   
 }
 
 input {
   float:flex;
+}
+
+footer {
+
+   background-color: #15C5BD;
+   width: 100%;
+   height: 60px;
+
 }
