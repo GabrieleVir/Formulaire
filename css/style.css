@@ -16,6 +16,7 @@ body {
   font-family: 'bellotaregular';
   background-color: #FFFFFF;
   width:100%;
+  margin:0 auto;
   background-color: grey;
   transform:scale(0.8);
 }
@@ -23,6 +24,8 @@ body {
 form {
   background-color: #FFFFFF;
   display: inline-block;
+
+
 
 }
 
@@ -61,15 +64,15 @@ fieldset{
   border: 0px solid black;
   vertical-align: top;
  
+
 }
+
 
 
 .message {
   margin-top: 0px;
-
   display:inline;
   border: 0px solid black;
-
   vertical-align: top;
 
   
@@ -90,10 +93,18 @@ input {
   float:flex;
 }
 
+
 footer {
 
    background-color: #15C5BD;
    width: 100%;
    height: 60px;
-
 }
+
+.message {
+  display: inline;
+}
+
+.message-box {
+  display: inline;
+  
