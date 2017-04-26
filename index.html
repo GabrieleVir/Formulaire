@@ -9,8 +9,9 @@
 <body>
 
 
+<form method="POST" action="formulaire-traitement.php">
 
-<form method="POST" action="www.google.fr">
+
 
 	<header>
 	 <h1>
@@ -345,7 +346,14 @@
 
 </form>
 
+<?php
 
+$mail = test_input($_POST["mail"]);
+if (!filter_var($mail, FILTER_VALIDATE_EMAIL)) {
+  $emailErr = "Invalid email format"; 
+}
+
+?>
 
 
 
