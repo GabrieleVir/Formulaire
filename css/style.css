@@ -16,7 +16,6 @@ body {
   font-family: 'bellotaregular';
   width:90%;
   margin:auto;
-  
   background-color: #f2f2f2;
 
 }
@@ -100,7 +99,7 @@ fieldset{
 }
 
 .email {
-  padding-top: 60px;
+  padding-top: 100px;
   padding-bottom: 10px;
   margin-bottom: 37px;
 
@@ -136,6 +135,11 @@ footer {
   display: inline;
 }
 
+.sujet {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .message-box {
   display: inline;
 
@@ -169,9 +173,10 @@ input {
 }
 
 #text-message {
-  width: 500px;
+  width: 92%;
   border: solid dashed 1px;
   font-size: 16px;
   margin-top: 20px;
+  resize: none;
 
 }
