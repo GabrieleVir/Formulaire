@@ -16,12 +16,13 @@ body {
   font-family: 'bellotaregular';
   background-color: #FFFFFF;
   width:100%;
+  margin:0 auto;
   background-color: grey;
   transform:scale(0.8);
 }
 
 form {
-  background-color: #FFFFFF;
+  background-color: #EFEFEF;
 
 }
 
@@ -66,14 +67,14 @@ fieldset{
 
 .info {
   width:80%;
-  border: 0px solid black;
+  border: 2px solid black;
 }
 
 .message {
   margin-top: 20px;
   width: 80%;
   display:inline;
-  border: 0px solid black;
+  border: 2px solid black;
   
 }
 
@@ -95,4 +96,20 @@ button {
 
 input {
   float:flex;
+}
+
+textarea {
+  display: inline;
+  float:right;
+  border: 5px solid black;
+
+}
+
+.message {
+  display: inline;
+}
+
+.message-box {
+  display: inline;
+  
 }
