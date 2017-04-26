@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'bellotaregular';
+    src: url('../Bellota-Regular-webfont.eot');
+    src: url('../Bellota-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../Bellota-Regular-webfont.woff') format('woff'),
+         url('../Bellota-Regular-webfont.ttf') format('truetype'),
+         url('../Bellota-Regular-webfont.svg#bellotaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+body {
+  font-family: 'bellotaregular';
+  background-color: #FFFFFF;
+  width:100%;
+  background-color: grey;
+  transform:scale(0.8);
+}
+
+form {
+  background-color: #FFFFFF;
+
+}
+
+header {
+  background-color: #15C5BD;
+}
+
+h1 {
+  padding-top: 40px;
+  padding-left: 40px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+h2 {
+  padding-bottom: 50px;
+  padding-left: 40px;
+  color:#FFF;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family:;
+}
+
+
+fieldset{
+  display:inline;
+
+
+}
+.top-left {
+  display:inline;
+  float:left;
+  padding-left: 10px;
+  width:120px;
+}
+
+.info {
+  width:90%;
+  width:12%;
+  display: inline;
+}
+
+.info {
+  width:80%;
+  border: 0px solid black;
+}
+
+.message {
+  margin-top: 20px;
+  width: 80%;
+  display:inline;
+  border: 0px solid black;
+  
+}
+
+.bottom-left {
+  
+  display:inline;
+  float:left;
+
+  width:12%;
+  margin-top: 20px;
+}
+
+button {
+  display:block;
+  float:right;
+  width:100px;
+  
+}
+
+input {
+  float:flex;
+}

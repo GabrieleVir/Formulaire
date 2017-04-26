@@ -4,6 +4,7 @@
 	<title>Formulaire</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/bootstrap.css" style="text/css">
+	<link rel="stylesheet" href="css/style.css" style="text/css">
 </head>
 <body>
 
@@ -11,43 +12,49 @@
 
 <form method="POST" action="www.google.fr">
 
+	<header>
+	 <h1>
+	 	Contact
+	 </h1>
 
- <h1>
- Oops ! Désolé de savoir que vous rencontrez un probleme :( 
- </h1>
+	 <h2>
+	 Oops ! Désolé de savoir que vous rencontrez un probleme :( 
+	 <br>Voici comment nous contacter pour vous aidez :  
+	 
+	 </h2>	
+	 
 
- <h2>
- Voici comment nous contacter pour vous aidez !  
- </h2>	
-
+	</header>
  <div class="top-left">
 	<p>A propos de vous</p>
  </div>
 
 
  <fieldset class="info">
- 	<div>
+ 	<div class="nom">
  		<label for="nom"> Nom :</label>
- 		<input type="text" id="nom">
+ 		<input type="text" id="nom" placeholder="Nom">
  	</div>
 
- 	<div>
+ 	<div class="nom">
  		<label for="prenom"> Prénom </label>
- 		<input type="text" id="prenom">
+ 		<input type="text" id="prenom" placeholder="Prénom">
+
+ 	</div>
+		<div class="genres">
+ 			<label for="genre"> Genre</label>
+	 		<input type="radio" id="genre" name="genre" value="Homme" checked> H
+	 		<input type="radio" id="genre" name="genre" value="Femme"> F
+	 		<input type="radio" id="genre" name="genre" value="Autre"> X
  	</div>
 
- 	<div>
+	
+ 	<div class="email">
  		<label for="mail"> E-Mail</label>
  		<input type="email" id="mail">
  	</div>
 
- 	<div>
- 		<label for="genre"> Genre</label>
- 		<input type="radio" id="genre" name="genre" value="Homme" checked> H
- 		<input type="radio" id="genre" name="genre" value="Femme"> F
- 		<input type="radio" id="genre" name="genre" value="Autre"> X
- 	</div>
-
+ 
  	<div>
  		<label for="pays">Pays </label>
 	 	<select> 
@@ -306,6 +313,8 @@
  	</div>
 
 
+
+
  </fieldset>
 
 <!-- Ma partie à faire avec CSS -->
@@ -324,10 +333,12 @@
   			<input type="radio" name="sujet" id="Sujet3" value="Sujet 3" > <label for="Sujet3">Sujet 3</label><br>
   			<input type="radio" name="sujet" id="autre" value="Sujet 4" > <label for="autre">Autre : </label><input type="text" id="sujet-autre"><br>
   				
+			<p> </p>
 
 		<label for="text-message">   </label>
 		<textarea id="text-message" rows="10"; cols=""; placeholder="Décrivez votre soucis ici !" ></textarea>
-		<button type="submit">Envoyer =)</button>
+
+		<button type="submit"> Envoyer =)</button>
   	</div>
 
  </fieldset>
