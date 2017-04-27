@@ -9,7 +9,7 @@
 <body>
 
 
-<form method="POST" action="formulaire-traitement.php">
+<form method="POST" action="php/formulaire-traitement.php">
 
 
 
@@ -33,12 +33,12 @@
  <h3>A propos de vous</h3>
  	<div class="nom">
  		<label for="nom"> Nom :</label>
- 		<input type="text" id="nom" placeholder="Votre nom">
+ 		<input type="text" name="nom" id="nom" placeholder="Votre nom">
  	</div>
 
  	<div class="nom">
  		<label for="prenom"> Prénom </label>
- 		<input type="text" id="prenom" placeholder="Votre prénom">
+ 		<input type="text" name="prenom" id="prenom" placeholder="Votre prénom">
 
  	</div>
 		<div class="nom">
@@ -51,14 +51,14 @@
 	
  	<div class="email">
  		<label for="mail"> E-Mail</label>
- 		<input type="email" id="mail" placeholder="Votre E-Mail
+ 		<input type="email" name="email" id="mail" placeholder="Votre E-Mail
  		">
  	</div>
 
  
  	<div class="pays-list">
  		<label for="pays">Pays </label>
-	 	<select> 
+	 	<select name="pays"> 
 
 			<option value="AF">Afghanistan</option>
 			<option value="AX">Åland Islands</option>
@@ -337,7 +337,7 @@
 			
 	<div class="message-box">
 		<label for="text-message">   </label>
-		<textarea id="text-message" rows="10"; cols="50"; placeholder="Décrivez votre soucis ici !" ></textarea>
+		<textarea id="text-message" name="text-message" rows="10"; cols="50"; placeholder="Décrivez votre soucis ici !" ></textarea>
 
 		
   	
