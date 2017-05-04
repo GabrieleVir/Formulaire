@@ -23,8 +23,15 @@
 
 	<div class="php">
 		<?php
+
+	if (!empty($_POST['envoi'])) {
+    if (!empty($_POST['prenom']) && !empty($_POST['message'])) {
+
+    } else {
+        echo '<h1>Votre commentaire n\'a pas été posté</h1><p>Vous devez remplir tous les champs du formulaire</p>';
+    }
 			$nom = $_POST["nom"];
-			
+
 			if($nom === "Virga") {
 				echo "Bienvenue Tao" . '<br/>';
 
@@ -46,6 +53,8 @@
 			for ($i = 16; $i <= $n1; $i++) {
 				echo $i + $i . '&nbsp';
 			}
+
+}
 
 
 		?>
