@@ -1,14 +1,15 @@
 		<?php
-		if (isset($_POST['nom'] , $_POST['prenom'] , $_POST['email'])) 
-		{
-			
-		} else //si tous les champs ne sont pas remplis
-		{
-			$message = 'Tous les champs ne sont pas remplis';
-			echo message;
-			include '../index.html';
-		}
-	
+			if (isset($_POST['envoi'])) 
+			{
+				if (!empty($_POST['nom'])) 
+				{
+					
+				} else //si tous les champs ne sont pas remplis
+				{
+					$message = 'Tous les champs ne sont pas remplis';
+					
+				}
+	 		}
 
 
 		?>
@@ -370,14 +371,19 @@
 
 <footer>
 	<input class="button" name="envoi" type="submit">
-	<?php 	if (!empty($_POST['envoi'])) {
-    if (!empty($_POST['prenom']) && !empty($_POST['message'])) {
+	<?php
+	if(isset($message))
+	{
+		echo $message;
+	}
 
-    } else {
-        echo '<h1>Votre commentaire n\'a pas été posté</h1><p>Vous devez remplir tous les champs du formulaire</p>';
-    } ?>
+	?>
 </footer>
 
 </form>
 </body>
 </html>
+
+
+
+	
