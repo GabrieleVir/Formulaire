@@ -60,10 +60,11 @@
 <head>
 	<title>Formulaire</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="css/bootstrap.css" style="text/css">
-	<link rel="stylesheet" href="css/style.css" style="text/css">
-	<script src="js/jquery-1.9.1.js"></script>
-	<script src="js/jquery.validate.min.js"></script>
+	<link rel="stylesheet" href="Assets/css/bootstrap.css" style="text/css">
+	<link rel="stylesheet" href="Assets/css/style.css" style="text/css">
+	<script src="Assets/js/jquery-1.9.1.js"></script>
+	<script src="Assets/js/jquery.validate.min.js"></script>
+	<script src="Assets/js/ajax.js"></script>
 <script>
 $(function() 
 {
@@ -440,7 +441,7 @@ $(function()
 		
   	
 <figure id="hacker-p">
-	<img src="hackers-poulette-logo.png" alt="Image Hackers poulette">
+	<img src="Assets/img/hackers-poulette-logo.png" alt="Image Hackers poulette">
 </figure>
 
 
@@ -462,8 +463,9 @@ $(function()
 </form>
 	<script>
 	$("index.php").validate();
+
 	</script>
-</script>
+
 </body>
 </html>
 
