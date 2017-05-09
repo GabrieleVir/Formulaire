@@ -48,13 +48,13 @@
 		$mess = ucfirst($message);
 		echo "<div class=".$class.">".$mess."</div>";
 	}
-
+	*/
 	function randWord ($len = 10) {
 		$word = array_merge(range('a', 'z'),range('A', 'Z'));
 		shuffle($word);
 		return "<br/>".substr(implode($word), 0,$len);
 	}
-	*/
+	echo randWord(5);	
 
 	
 ?>
@@ -119,7 +119,7 @@ Mais le manche, mais le manche,
 Buvons un coup ma serpette est perdue
 Mais le manche est revenu.');
 */
-
+/*
 	function buvons($guindaille, $lettre){
 		$voyelle = array( "oup", "ais", "un", "ue", "u", "on", "a", "est","an","et", "e");
 		$guindaille = str_replace($voyelle, $lettre, $guindaille);
@@ -130,7 +130,7 @@ $guindaille = "Buvons un  ma serpette est perdue,<br />Mais le manche, mais le m
 	foreach ($lettre as $key) {
 		echo buvons($guindaille,$key);
 		echo '<br />';
-	}
+	}*/
 ?>
 
 </body>

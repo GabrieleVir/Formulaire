@@ -184,3 +184,10 @@ input {
 .php {
   margin-left: 40px;
 }
+
+
+#formulaire label.error {
+  color:#FB3A3A;
+  font-weight:bold;
+  font-style: italic;
+}

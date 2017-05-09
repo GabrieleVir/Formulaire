@@ -1,20 +1,59 @@
 		<?php
+
+			function stringSani ($filtredvar) {
+				$filtredvar = filter_var($filtredvar,FILTER_SANITIZE_STRING);
+				return $filtredvar;
+			}	
+
+			function sanitize ($string) // enlève les chiffres dans les strings nom, prenom.
+			{
+				$search = [0,1,2,3,4,5,6,7,8,9];
+				$replace = "";
+				$string = str_replace($search, $replace, $string);	
+				return $string;
+			}
+
+			
+
 			if (isset($_POST['envoi'])) 
 			{
-				if (!empty($_POST['nom'])) 
+			$nom = stringSani($_POST['nom']);
+			$prenom = stringSani($_POST['prenom']);
+			$txt_msg = stringSani($_POST['text_message']);
+			$sujet = stringSani($_POST['sujet-string']);
+			$nom = sanitize ($_POST['nom']);
+			$prenom = sanitize ($_POST['prenom']);
+			$email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
+			$sujet_radio = $_POST['sujet'];
+
+				if (!empty($nom) && !empty($prenom) && !empty($email) && !empty($txt_msg) && isset($sujet_radio)) 
 				{
+
+					$msg_mail = 'Nom : '.$nom."&nbsp".'Prénom : '.$prenom."<br/>".'Email : '.$email."<br/>".'Sujet : '.$sujet_radio."<br/>".'Message :'.$txt_msg;
+					if ($_POST['sujet'] == 'Sujet 4' && empty($sujet)) 
+					{	
+						$mess_suj = 'Veuillez mettre un titre pour la raison de votre message.';
+					} else 
+					{
+						$msg_mail = 'Nom : '.$nom."&nbsp".'Prénom : '.$prenom."<br/>".'Email : '.$email."<br/>".'Sujet : '.$sujet_radio."&nbsp".$sujet."<br/>".'Message :'.$txt_msg;
+							mail('gabrielevirgabecode@gmail.com', 'Demande client/aide', $msg_mail);
+					}
+						
 					
-				} else //si tous les champs ne sont pas remplis
+					
+				} 
+				
+				
+				else //si tous les champs ne sont pas remplis
 				{
 					$message = 'Tous les champs ne sont pas remplis';
-					
 				}
 	 		}
 
 
 		?>
 
-
+	
 
 <!DOCTYPE html>
 <html>
@@ -23,11 +62,44 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/bootstrap.css" style="text/css">
 	<link rel="stylesheet" href="css/style.css" style="text/css">
+	<script src="js/jquery-1.9.1.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+<script>
+$(function() 
+{
+	$("#formulaire").validate( 
+	{
+		rules: 
+		{
+			nom: "required",
+			prenom: "required",
+			email: 
+			{
+				required: true,
+				mail: true,
+			},
+			text_message: "required", 
+		},
+		messages: 
+		{
+			nom: "<br/>"+"*Veuillez mettre un nom valide",
+			prenom: "<br/>"+"*Veuillez mettre un prénom valide",
+			email: "<p>"+"*Veuillez mettre un e-mail valide"+"</p>",
+			text_message: "<br/>"+"*Veuillez décrire votre problème"
+
+		},
+		submitHandler: function(form)
+		{
+			form.submit();
+		}
+	});	
+});
+</script>
 </head>
 <body>
 
 
-<form method="POST" action="">
+<form method="POST" action="" id="formulaire">
 
 
 
@@ -51,12 +123,12 @@
  <h3>A propos de vous</h3>
  	<div class="nom">
  		<label for="nom"> Nom :</label>
- 		<input type="text" name="nom" id="nom" placeholder="Votre nom">
+ 		<input type="text" name="nom" id="nom" placeholder="Votre nom" required>
  	</div>
 
  	<div class="nom">
  		<label for="prenom"> Prénom </label>
- 		<input type="text" name="prenom" id="prenom" placeholder="Votre prénom">
+ 		<input type="text" name="prenom" id="prenom" placeholder="Votre prénom" required>
 
  	</div>
 		<div class="nom">
@@ -70,7 +142,7 @@
  	<div class="email">
  		<label for="mail"> E-Mail</label>
  		<input type="email" name="email" id="mail" placeholder="Votre E-Mail
- 		">
+ 		" required>
  	</div>
 
  
@@ -351,11 +423,19 @@
   			<input type="radio" class="sujet" name="sujet" id="Sujet2" value="Sujet 2" > <label for="Sujet2">Problème Logiciel</label><br>
   			<input type="radio" class="sujet" name="sujet" id="Sujet3" value="Sujet 3" > <label for="Sujet3">Problème Livraison</label><br>
   			<input type="radio" class="sujet" name="sujet" id="autre" value="Sujet 4" > <label for="autre">Autre : </label><input type="text" id="sujet-autre" name="sujet-string"><br>
+  			<?php
+  				if(isset($mess_suj))
+  				{
+  					echo "<em>".$mess_suj."</em>";
+  				}
   				
+
+  				
+  			?>
 			
 	<div class="message-box">
-		<label for="text-message">   </label>
-		<textarea id="text-message" name="text-message" rows="10"; cols="50"; placeholder="Décrivez votre soucis ici !" ></textarea>
+		<label for="text_message">   </label>
+		<textarea id="text_message" name="text_message" rows="10"; cols="50"; placeholder="Décrivez votre soucis ici !" required></textarea>
 
 		
   	
@@ -375,12 +455,15 @@
 	if(isset($message))
 	{
 		echo $message;
-	}
-
-	?>
+	} 
+?>
 </footer>
 
 </form>
+	<script>
+	$("index.php").validate();
+	</script>
+</script>
 </body>
 </html>
 

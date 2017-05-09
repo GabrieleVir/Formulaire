@@ -23,17 +23,8 @@
 
 	<div class="php">
 		<?php
-		if (isset($_POST['nom'] , $_POST['prenom'] , $_POST['email'])) 
-		{
-
-		} else //si tous les champs ne sont pas remplis
-		{
-			$message = 'Tous les champs ne sont pas remplis';
-			echo message;
-			include '../index.html';
-		}
-	
-
+		include '../index.php';
+		echo "<br/>".$nom."&nbsp;".$prenom."<br/>".$email."<br/>".$txt-msg."<br/>".$sujet."&nbsp;".$sujet_radio;
 
 		?>
 	</div>
